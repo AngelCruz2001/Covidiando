@@ -14,5 +14,8 @@
     <string name="contactName">Felipe de los angeles</string>
     <string name="contactNumber">6183259226</string>
 
+    <string name="menu_configuracion">Configuracion</string>
+    <string name="menu_Fraternidad">Red de fraternidad</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
