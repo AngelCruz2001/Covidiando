@@ -18,4 +18,38 @@
     <string name="menu_Fraternidad">Red de fraternidad</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+    <string name="password">Contraseña</string>
+    <string name="email">Correo electronico</string>
+    <string name="name">Nombre(s)</string>
+    <string name="surname">Apellidos</string>
+    <string name="date">Fecha de nacimiento</string>
+    <string name="entrar_con">Entrar con:</string>
+    <string name="entrar">Entrar</string>
+    <string name="al_chile_si_le_entro">¡Al chile si le entró!</string>
+    <string name="title_activity_user_menu2">userMenu2</string>
+    <string name="al_chile_siguiente">Siguiente</string>
+    <string name="phoneNumber">Telefono</string>
+    <string name="rbtn_commerce">Comercio</string>
+    <string name="adress">Dirección</string>
+    <string name="rbtn_client">Cliente</string>
+    <string name="rbtn_deliver">Repartidor</string>
+    <string name="kindUser">Tipo de usuario</string>
+    <string name="kindVehicule">Medio de transporte</string>
+    <string name="curp">Curp</string>
+    <string name="bussinesName">Nombre del negocio</string>
+    <string-array name="food_types">
+        <item>Tipo de comida</item>
+        <item>Comida</item>
+        <item>Comida rapida</item>
+        <item>Bebidas</item>
+        <item>Bocadillos</item>
+        <item>Cena</item>
+        <item>Desayuno</item>
+        <item>Ensaladas</item>
+        <item>Postres</item>
+    </string-array>
 </resources>
