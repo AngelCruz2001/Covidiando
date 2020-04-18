@@ -9,35 +9,22 @@
         android:id="@+id/nav_home"
         android:name="com.jpg.covidiando.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-
-        <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
-    </fragment>
-    <fragment
-        android:id="@+id/nav_home_second"
-        android:name="com.jpg.covidiando.ui.home.HomeSecondFragment"
-        android:label="@string/home_second"
-        tools:layout="@layout/fragment_home_second">
-        <action
-            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-            app:destination="@id/nav_home" />
-
-        <argument
-            android:name="myArg"
-            app:argType="string" />
-    </fragment>
+        tools:layout="@layout/fragment_home"/>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.jpg.covidiando.ui.fraternityRed.FraternityRedViewModel"
-        android:label="Red de fraternidad"
-        tools:layout="@layout/fragment_fraternityred" />
+        android:id="@+id/nav_fraternity"
+        android:name="com.jpg.covidiando.ui.fraternity.FraternityFragment"
+        android:label="@string/menu_Fraternidad"
+        tools:layout="@layout/fragment_fraternity" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.jpg.covidiando.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_configuracion"
+        android:name="com.jpg.covidiando.ui.configuracion.ConfiguracionFragment"
+        android:label="@string/menu_configuracion"
+        tools:layout="@layout/fragment_configuracion" />
 </navigation>

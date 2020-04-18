@@ -1,4 +1,4 @@
-package com.jpg.covidiando.ui.fraternity.;
+package com.jpg.covidiando.ui.fraternity;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,9 +26,9 @@ public class recycler_adapter_contact extends RecyclerView.Adapter<recycler_adap
         TextView phoneNumber;
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
-            image = (ImageView) itemView.findViewById(R.id.img);
+            image = (ImageView) itemView.findViewById(R.id.imgProfile);
             name = (TextView) itemView.findViewById(R.id.tvName);
-            phoneNumber = (TextView) itemView.findViewById(R.id.tvPhoneNumber)
+            phoneNumber = (TextView) itemView.findViewById(R.id.tvPhoneNumber);
         }
 
 
@@ -37,17 +37,18 @@ public class recycler_adapter_contact extends RecyclerView.Adapter<recycler_adap
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list,parent,false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.contact_list,parent,false);
         ListViewHolder listViewHolder = new ListViewHolder(v);
         return listViewHolder;
     }
 
     @Override
     public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
-        item_list currentItem = list.get(position);
+        contact_list currentItem = list.get(position);
 
-        holder.image.setImageResource(currentItem.getSourceImage());
-        holder.text_Info.setText(currentItem.getText_info());
+        holder.image.setImageResource(currentItem.getProfilePicture());
+        holder.name.setText(currentItem.getName());
+        holder.phoneNumber.setText(currentItem.getPhoneNumber());
 
     }
 
