@@ -25,7 +25,7 @@ public class RegistroActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.next);
 
         fragment_universal = new fragment_universal();
-        FragmentTransaction ft =  getSupportFragmentManager().beginTransaction();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
         ft.add(R.id.fragments, fragment_universal);
         ft.commit();
 

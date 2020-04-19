@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -18,7 +20,7 @@ import java.util.ArrayList;
  * create an instance of this fragment.
  *
  */
-public class AskFragment extends Fragment {
+public class AskFragment extends Fragment   {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -56,14 +58,15 @@ public class AskFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View root = inflater.inflate(R.layout.fragment_ask, container, false);
-
+        final View root = inflater.inflate(R.layout.fragment_ask, container, false);
+        TextView make = (TextView)root.findViewById(R.id.btnPedir);
         RecyclerView recycler_products = (RecyclerView) root.findViewById(R.id.recycler_products);
         RecyclerView recycler_car = (RecyclerView) root.findViewById(R.id.recycler_car);
         recycler_products.setHasFixedSize(true);
@@ -78,9 +81,21 @@ public class AskFragment extends Fragment {
         list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
 
         recycler_adapter_products adapter =  new recycler_adapter_products(list);
-
         recycler_products.setAdapter(adapter);
+        make.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         return root;
     }
+    public void makeOrder(View v) {
+        Toast.makeText(v.getContext()," Angel1 no el 21",Toast.LENGTH_LONG).show();
+
+    }
+
+
+
 }

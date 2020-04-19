@@ -37,9 +37,11 @@ public class HomeFragment extends Fragment {
         layoutManager = new LinearLayoutManager(container.getContext());
         recyclerView.setLayoutManager(layoutManager);
         ArrayList<item_list> list = new ArrayList<>();
-        list.add(new item_list(R.drawable.covid19,"texto de prueba1"));
-        list.add(new item_list(R.drawable.covid19,"texto de prueba2"));
-        list.add(new item_list(R.drawable.covid19,"texto de prueba3"));
+        list.add(new item_list(R.drawable.covid19,"Aqui se va a mostrar informacion actualizada sobre el covid-19"));
+        list.add(new item_list(R.drawable.covid19,"Aqui se va a mostrar informacion actualizada sobre el covid-19"));
+        list.add(new item_list(R.drawable.covid19,"Aqui se va a mostrar informacion actualizada sobre el covid-19"));
+        list.add(new item_list(R.drawable.covid19,"Aqui se va a mostrar informacion actualizada sobre el covid-19"));
+
         mAdapter =  new recycler_adapter(list);
 
         recyclerView.setAdapter(mAdapter);

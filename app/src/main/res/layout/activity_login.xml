@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_whats" />
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/userName"
@@ -68,7 +68,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="76dp"
-        app:cardBackgroundColor="#169807"
+        app:cardBackgroundColor="#45C3C2"
         app:cardCornerRadius="30dp"
         app:cardElevation=".1dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,9 +87,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
-                android:text="@string/entrar"
                 android:clickable="true"
-                android:textColor="#fff"
+                android:text="@string/entrar"
+                android:textColor="#000"
                 android:textSize="24sp" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

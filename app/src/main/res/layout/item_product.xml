@@ -8,11 +8,13 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/carViewProduct"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/border">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="185dp">
+            android:layout_height="185dp"
+            android:background="@drawable/border">
 
 
             <ImageView
@@ -24,7 +26,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.2"
-                app:srcCompat="@drawable/covid19" />
+                app:srcCompat="@drawable/ic_image" />
 
             <TextView
                 android:id="@+id/tvNameProduct"

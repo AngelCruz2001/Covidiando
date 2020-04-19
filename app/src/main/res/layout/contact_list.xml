@@ -98,6 +98,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="8dp"
                         android:clickable="true"
+                        android:onClick="makeOrder"
                         android:text="@string/entrar"
                         android:textColor="#fff"
                         android:textSize="18sp" />

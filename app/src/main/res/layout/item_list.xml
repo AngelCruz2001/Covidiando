@@ -22,7 +22,7 @@
                 android:layout_width="206dp"
                 android:layout_height="66dp"
                 android:layout_marginStart="20dp"
-                android:text="Informacion del covid 19 jaja"
+                android:text="Aqui se va a mostrar informacion actualizada sobre el covid-19"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/img"
                 app:layout_constraintTop_toTopOf="parent" />
