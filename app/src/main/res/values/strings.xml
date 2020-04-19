@@ -22,7 +22,9 @@
     <string name="btnUpdateData">Guardar cambios</string>
     <string name="contactName">Johan Gonzalez</string>
     <string name="contactNumber">6182593051</string>
-
+    <string name="username">Angel Eduardo Cruz Garcia</string>
+    <string name="email_pro">angi_ed01@hotmail.com</string>
+    <string name="pass">Jpg1407a</string>
     <string name="menu_configuracion">Configuracion</string>
     <string name="menu_Fraternidad">Red de fraternidad</string>
 
