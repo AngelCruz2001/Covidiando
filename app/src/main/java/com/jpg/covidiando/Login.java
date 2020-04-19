@@ -14,7 +14,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        TextView btn =findViewById(R.id.siEntro);
+        TextView btn =findViewById(R.id.btnPedir);
         TextView registerOn = findViewById(R.id.register);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,8 +11,8 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="home_second">Home Second</string>
-    <string name="contactName">Felipe de los angeles</string>
-    <string name="contactNumber">6183259226</string>
+    <string name="contactName">Johan Gonzalez</string>
+    <string name="contactNumber">6182593051</string>
 
     <string name="menu_configuracion">Configuracion</string>
     <string name="menu_Fraternidad">Red de fraternidad</string>
@@ -22,8 +22,18 @@
 
 
 
-    <string name="password">Contraseña</string>
+
+
+    <string name="settings_Profile">Perfil de usuario</string>
+    <string name="Profile">Nombre</string>
     <string name="email">Correo electronico</string>
+    <string name="password">Contraseña</string>
+    <string name="settings_GPS">Localización</string>
+    <string name="fraternity_Order">Permitir a la aplicación acceder a los servicios de localización</string>
+    <string name="settings_Notifications">Notificaciones</string>
+    <string name="notifications_Access">Activar notificaciones instantaneas</string>
+    <string name="btnUpdateData">Guardar cambios</string>
+
     <string name="name">Nombre(s)</string>
     <string name="surname">Apellidos</string>
     <string name="date">Fecha de nacimiento</string>
@@ -32,7 +42,7 @@
     <string name="al_chile_si_le_entro">¡Al chile si le entró!</string>
     <string name="title_activity_user_menu2">userMenu2</string>
     <string name="al_chile_siguiente">Siguiente</string>
-    <string name="phoneNumber">Telefono</string>
+    <string name="phoneNumber">Telefono celular</string>
     <string name="rbtn_commerce">Comercio</string>
     <string name="adress">Dirección</string>
     <string name="rbtn_client">Cliente</string>

@@ -71,10 +71,9 @@ public class fragment_universal extends Fragment {
         View view = inflater.inflate(R.layout.fragment_universal, container, false);
         final EditText date = (EditText) view.findViewById(R.id.etPlannedDate);
         RadioGroup radioGroup = (RadioGroup) view.findViewById(R.id.radio);
-        final RadioButton rbtn_commerce = (RadioButton)view.findViewById(R.id.rbtn_commerce);
-        final RadioButton rbtn_deliver = (RadioButton)view.findViewById(R.id.rbtn_deliver);
+  
 
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+      /*  radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (R.id.rbtn_commerce == checkedId){
@@ -85,7 +84,7 @@ public class fragment_universal extends Fragment {
                     ((RegistroActivity)getActivity()).setVariable("client");
                 }
             }
-        });
+        }); */
 
 
         date.setOnClickListener(new View.OnClickListener() {

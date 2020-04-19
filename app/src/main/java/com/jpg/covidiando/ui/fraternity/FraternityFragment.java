@@ -37,9 +37,10 @@ public class FraternityFragment extends Fragment {
         layoutManager = new LinearLayoutManager(container.getContext());
         recyclerView.setLayoutManager(layoutManager);
         ArrayList<contact_list> list1 = new ArrayList<>();
-        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.google));
-        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.google));
-        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.google));
+        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.logo,"asdfasdfasdf","asdf"));
+        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.google,"asdfasdfasdf","asdf"));
+        list1.add(new contact_list("Nombre de la persona","1234567890",R.drawable.covid19,"asdfasdfasdf","asdf"));
+
         mAdapter =  new recycler_adapter_contact(list1);
 
         recyclerView.setAdapter(mAdapter);
