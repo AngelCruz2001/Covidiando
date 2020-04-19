@@ -24,11 +24,17 @@ public class recycler_adapter_contact extends RecyclerView.Adapter<recycler_adap
         ImageView image;
         TextView name;
         TextView phoneNumber;
+        TextView adress;
+        TextView distance;
+        TextView btnPedir;
+
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
             image = (ImageView) itemView.findViewById(R.id.imgProfile);
             name = (TextView) itemView.findViewById(R.id.tvName);
             phoneNumber = (TextView) itemView.findViewById(R.id.tvPhoneNumber);
+            adress = (TextView) itemView.findViewById(R.id.tvAdress);
+            btnPedir = (TextView) itemView.findViewById(R.id.btnPedir);
         }
 
 
@@ -49,6 +55,8 @@ public class recycler_adapter_contact extends RecyclerView.Adapter<recycler_adap
         holder.image.setImageResource(currentItem.getProfilePicture());
         holder.name.setText(currentItem.getName());
         holder.phoneNumber.setText(currentItem.getPhoneNumber());
+        holder.adress.setText(currentItem.getAdress());
+
 
     }
 
