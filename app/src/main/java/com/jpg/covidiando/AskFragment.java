@@ -2,9 +2,14 @@ package com.jpg.covidiando;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
 
 
 /**
@@ -57,6 +62,25 @@ public class AskFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ask, container, false);
+        View root = inflater.inflate(R.layout.fragment_ask, container, false);
+
+        RecyclerView recycler_products = (RecyclerView) root.findViewById(R.id.recycler_products);
+        RecyclerView recycler_car = (RecyclerView) root.findViewById(R.id.recycler_car);
+        recycler_products.setHasFixedSize(true);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(container.getContext());
+        recycler_products.setLayoutManager(layoutManager);
+
+        ArrayList<item_product> list = new ArrayList<>();
+        list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
+        list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
+        list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
+        list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
+        list.add(new item_product("Chimichangas","Descripcion del producto","$ 120.00",R.drawable.covid19));
+
+        recycler_adapter_products adapter =  new recycler_adapter_products(list);
+
+        recycler_products.setAdapter(adapter);
+
+        return root;
     }
 }

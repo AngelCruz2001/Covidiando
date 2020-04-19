@@ -27,22 +27,9 @@
     <string name="menu_Fraternidad">Red de fraternidad</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
-
-
-
-
-    <string name="settings_Profile">Perfil de usuario</string>
-    <string name="Profile">Nombre</string>
-    <string name="email">Correo electronico</string>
-    <string name="password">Contraseña</string>
-    <string name="settings_GPS">Localización</string>
-    <string name="fraternity_Order">Permitir a la aplicación acceder a los servicios de localización</string>
-    <string name="settings_Notifications">Notificaciones</string>
-    <string name="notifications_Access">Activar notificaciones instantaneas</string>
-    <string name="btnUpdateData">Guardar cambios</string>
-
+    <string name="avaibleProducts">Productos disponibles</string>
+    <string name="con">Completar pedido</string>
+    <string name="lis">Carrito</string>
     <string name="name">Nombre(s)</string>
     <string name="surname">Apellidos</string>
     <string name="date">Fecha de nacimiento</string>
